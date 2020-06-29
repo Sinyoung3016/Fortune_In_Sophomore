@@ -1,4 +1,4 @@
-package DS_10_02;
+package DataStructure.List;
 
 public class CircularLinkedQueue<T> implements Queue<T>{
 
@@ -23,9 +23,8 @@ public class CircularLinkedQueue<T> implements Queue<T>{
 
     public T front(){
         T frontElement = null;
-        if(!this.isEmpty()) {
+        if(!this.isEmpty())
             frontElement = this.rearNode().next().element();
-        }
         return frontElement;
     }
     public T rear(){
@@ -69,16 +68,6 @@ public class CircularLinkedQueue<T> implements Queue<T>{
     public void clear(){
         this.setRearNode(null);
         this.setSize(0);
-    }
-
-    @Override
-    public T elementAt(int anOrder) {
-        return null;
-    }
-
-    @Override
-    public Iterator<T> iterator() {
-        return null;
     }
 
 }

@@ -5,7 +5,7 @@ public enum ListOrder {
     Descending, //내림차순 리스트
     Random;     //무작위순서 리스트
 
-    public static final String [] ORDER_NAMES = {"오름차순", "내림차순", "무작위"};
+    public final static String [] ORDER_NAMES = {"오름차순", "내림차순", "무작위"};
 
     public String orderName(){
         //각 값에 문자열 이름을 부여하여, Enum 값에 해당하는 문자열을 얻기 위함.

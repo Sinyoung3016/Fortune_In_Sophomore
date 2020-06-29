@@ -17,6 +17,8 @@ public class UnSortedLinkedList <T extends Comparable<T>>{
     //<GETTER SETTER END>
 
 
+
+
     public boolean addTo(T anElement, int anOrder) {
         //anOrder 순서에 anElement를 값으로 하는 노드 삽입
         if((0 > anOrder) || (anOrder > this.size()+1))//anOrder가 유효한지 확인

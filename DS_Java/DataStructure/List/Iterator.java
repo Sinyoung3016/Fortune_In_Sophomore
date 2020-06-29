@@ -1,4 +1,4 @@
-package DataStructure;
+package DataStructure.List;
 
 public interface Iterator<T> {
 

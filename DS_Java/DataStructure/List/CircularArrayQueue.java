@@ -1,11 +1,11 @@
-package DS_10_01;
+package DataStructure.List;
 
 public class CircularArrayQueue<T> implements Queue<T> {
 
-    private static final int DEFAULT_CAPACITY = 100;
+    private static final int DEFAULT_CAPACITY = 50;
 
     private int _maxLength; //capacity + 1
-    private int _frontPosition;
+    private int _frontPosition; //항상 직전의 원소를 가르킴
     private int _rearPosition;
     private T[] _elements;
 
@@ -16,15 +16,14 @@ public class CircularArrayQueue<T> implements Queue<T> {
         //아닐때는 this
     }
     public CircularArrayQueue(int givenCapacity){
-        this.setMaxLength(givenCapacity+1);
-        this.setElements((T[]) new Object [this.maxLength()]);
-        this.setFrontPosition(0);
-        this.setRearPosition(0);
+        this.setElements((T[]) new Object[this.maxLength()]);
+        this.setMaxLength(givenCapacity + 1);
+        this.setFrontPosition(-1);
+        this.setRearPosition(-1);
     }
     //<CONSTRUCTOR END>
 
     //<GETTER SETTER START>
-    public int capacity(){ return (this.maxLength() - 1); }
     public int maxLength(){ return this._maxLength; }
     public void setMaxLength(int newCapacity){ this._maxLength = newCapacity; }
     public int frontPosition(){ return this._frontPosition; }
@@ -43,7 +42,7 @@ public class CircularArrayQueue<T> implements Queue<T> {
     }
     public boolean isFull(){
         int nextRearPosition = (this.rearPosition() + 1) % this.maxLength();
-        return (nextRearPosition == this.frontPosition());
+        return (nextRearPosition == this.rearPosition());
     }
     public boolean isEmpty(){
         return (this.frontPosition() == this.rearPosition());
@@ -52,31 +51,31 @@ public class CircularArrayQueue<T> implements Queue<T> {
     public T front(){
         T frontElement = null;
         if(!this.isEmpty())
-            frontElement = this.elementAt(this.frontPosition());
+            frontElement = this.elementAt(this.frontPosition()+1);
         return frontElement;
     }
     public T rear(){
         T rearElement = null;
         if(!this.isEmpty())
-            rearElement = this.elementAt(this.rearPosition()-1);
+            rearElement = this.elementAt(this.rearPosition());
         return rearElement;
     }
 
     public boolean enQueue(T anElement){
-        //맨 뒤에 원소 삽입
+        //원소 삽입
         if(this.isFull()) return false;
         else{
             this.setRearPosition((this.rearPosition()+1) % this.maxLength());
             this.elements()[this.rearPosition()] = anElement;
             return true;
         }
-    }
+    };
     public T deQueue(){
-        //맨 앞의 원소 삭제
+        //원소 삭제
         T frontElement = null;
         if(!this.isEmpty()) {
             this.setFrontPosition((this.frontPosition() + 1) % this.maxLength());
-            frontElement = this.elements()[this.frontPosition()];
+             frontElement = this.elements()[this.frontPosition()];
             this.elements()[this.frontPosition()] = null;
         }
         return frontElement;
@@ -91,38 +90,10 @@ public class CircularArrayQueue<T> implements Queue<T> {
 
 
     public T elementAt(int Order){
-        // Order != Position
-        // (this.frontPosition()+1) % this.maxLength()가 anOrder의 0의 위치
-        // anOrder의 위치 = (this.frontPosition() + 1 + Order) % this.maxLength()
         if((0 <= Order) && (Order < this.size()))
-            return this.elements()[(this.frontPosition() + 1 + Order) % this.maxLength()];
+            return this.elements()[(Order+1+frontPosition())%maxLength()];
         else
             return null;
-    }
-
-    public Iterator<T> iterator(){
-        return new CircularArrayQueueIterator() ;
-    }
-
-    private class CircularArrayQueueIterator implements Iterator<T>{
-
-        private int _nextOrder;
-        private int nextOrder(){ return this._nextOrder; }
-        private void setNextOrder(int newOrder){ this._nextOrder= newOrder; }
-
-        private CircularArrayQueueIterator(){ this.setNextOrder(0);}
-
-        public boolean hasNext() {
-            return (this.nextOrder() <  CircularArrayQueue.this.size());
-        }
-        public T next() {
-            T nextElement = null;
-            if(this.hasNext()){
-                nextElement = CircularArrayQueue.this.elementAt(this.nextOrder());
-                this.setNextOrder(this.nextOrder()+1);
-            }
-            return nextElement;
-        }
     }
 
 }

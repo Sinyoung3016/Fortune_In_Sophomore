@@ -1,21 +1,19 @@
-package DataStructure;
+package DataStructure.List;
 
 class Node<T>{
     private T _element;
     private Node<T> _next;
 
-
-    //<CONSTRUCTER START>
+    //<CONSTRUCTOR START>
     public Node(){
         this._element = null;
         this._next = null;
     }
-    public Node(T givenElement, Node givenNext){
+    public Node(T givenElement, Node<T> givenNext){
         this._element = givenElement;
         this._next =  givenNext;
     }
-    //<CONSTRUCTER END>
-
+    //<CONSTRUCTOR END>
 
     //<GETTER SETTER START>
     public T element(){ return this._element;}
