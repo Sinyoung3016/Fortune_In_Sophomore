@@ -103,7 +103,6 @@ public class AppController {
         this.showGraph();
         AppView.outputLine("");
         AppView.outputLine("<<< 그래프의 입력과 사이클 검사를 종료합니다 >>>");
-
     }
 
 }

@@ -8,17 +8,9 @@ public class Edge {
         setHeadVertex(givenHeadVertex);
     }
 
-    public void setTailVertex(int givenTailVertex) {
-        this.tailVertex = givenTailVertex;
-    }
-    public int tailVertex() {
-        return tailVertex;
-    }
-    public void setHeadVertex(int givenHeadVertex) {
-        this.headVertex = givenHeadVertex;
-    }
-    public int headVertex() {
-        return headVertex;
-    }
+    public void setTailVertex(int givenTailVertex) { this.tailVertex = givenTailVertex; }
+    public int tailVertex() { return tailVertex; }
+    public void setHeadVertex(int givenHeadVertex) { this.headVertex = givenHeadVertex; }
+    public int headVertex() { return headVertex; }
 
 }
