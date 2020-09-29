@@ -5,45 +5,18 @@ public class Coloring {
     private int startingVertex;
     private LinkedList<Edge> sameColorEdges;
 
-    private int startingVertex() {
-        return startingVertex;
-    }
+    private int startingVertex() { return startingVertex; }
+    private void setStartingVertex(int startingVertex) { this.startingVertex = startingVertex; }
+    private AdjacencyMatrixGraph graph() { return graph; }
+    private void setGraph(AdjacencyMatrixGraph graph) { this.graph = graph; }
+    private VertexColor[] vertexColors() { return vertexColors; }
+    private void setVertexColors(VertexColor[] vertexColors) { this.vertexColors = vertexColors; }
 
-    private void setStartingVertex(int startingVertex) {
-        this.startingVertex = startingVertex;
-    }
+    public LinkedList<Edge> sameColorEdges() { return sameColorEdges; }
+    private void setSameColorEdges(LinkedList<Edge> sameColorEdges) { this.sameColorEdges = sameColorEdges; }
 
-    private AdjacencyMatrixGraph graph() {
-        return graph;
-    }
-
-    private void setGraph(AdjacencyMatrixGraph graph) {
-        this.graph = graph;
-    }
-
-    private VertexColor[] vertexColors() {
-        return vertexColors;
-    }
-
-    private void setVertexColors(VertexColor[] vertexColors) {
-        this.vertexColors = vertexColors;
-    }
-
-    public LinkedList<Edge> sameColorEdges() {
-        return sameColorEdges;
-    }
-
-    private void setSameColorEdges(LinkedList<Edge> sameColorEdges) {
-        this.sameColorEdges = sameColorEdges;
-    }
-
-    public VertexColor vertexColor(int aVertex) {
-        return this.vertexColors()[aVertex];
-    }
-
-    private void setVertexColor(int aVertex, VertexColor newColor) {
-        this.vertexColors()[aVertex] = newColor;
-    }
+    public VertexColor vertexColor(int aVertex) { return this.vertexColors()[aVertex]; }
+    private void setVertexColor(int aVertex, VertexColor newColor) { this.vertexColors()[aVertex] = newColor; }
 
     public Coloring(AdjacencyMatrixGraph givenGraph) {
         this.setGraph(givenGraph);
