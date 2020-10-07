@@ -184,8 +184,7 @@ int bitOr(int x, int y) {
  *   Rating: 1
  */
 int tmin(void) {
-  int a = -1;
-  return a<<31;
+  return 1<<31;
 }
 /* 
  * evenBits - return word with all even-numbered bits set to 1
@@ -193,8 +192,8 @@ int tmin(void) {
  *   Max ops: 8
  *   Rating: 1
  */
-int evenBits(void) {
-  return 2;
+int evenBits() {
+    return ~(170 + (170 << 8) + (170 << 16) + (170 << 24));
 }
 /* 
  * getByte - Extract byte n from word x
@@ -205,7 +204,7 @@ int evenBits(void) {
  *   Rating: 2
  */
 int getByte(int x, int n) {
-  return 2;
+  return (((x>>(n<<3))|0xffffff00)^0xffffff00);
 }
 /* 
  * float_abs - Return bit-level equivalent of absolute value of f for
