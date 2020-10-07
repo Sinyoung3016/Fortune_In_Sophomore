@@ -204,7 +204,7 @@ int evenBits() {
  *   Rating: 2
  */
 int getByte(int x, int n) {
-  return (((x>>(n<<3))|0xffffff00)^0xffffff00);
+  return (((x>>(n<<3))|(~0xff))^(~0xff));
 }
 /* 
  * float_abs - Return bit-level equivalent of absolute value of f for
