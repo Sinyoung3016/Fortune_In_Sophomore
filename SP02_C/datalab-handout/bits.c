@@ -218,8 +218,10 @@ int getByte(int x, int n) {
  *   Rating: 2
  */
 unsigned float_abs(unsigned uf) {
-  return 2;
-}
+ int x = uf<<1;
+    if (0xff000002 <= x && x <= 0xfffffffe) return uf;
+    uf = uf & 0x7fffffff;
+    return uf;}
 /* 
  * addOK - Determine if can compute x+y without overflow
  *   Example: addOK(0x80000000,0x80000000) = 0,
@@ -229,8 +231,10 @@ unsigned float_abs(unsigned uf) {
  *   Rating: 3
  */
 int addOK(int x, int y) {
-  return 2;
-}
+    int a = (x >> 31) & 1;
+    int b = (y >> 31) & 1;
+    int c = (((x&0x7fffffff) + (y&0x7fffffff)) >> 31) & 1;
+    return !((a + b + c) >> 1);}
 /* 
  * replaceByte(x,n,c) - Replace byte n in x with c
  *   Bytes numbered from 0 (LSB) to 3 (MSB)
@@ -241,7 +245,7 @@ int addOK(int x, int y) {
  *   Rating: 3
  */
 int replaceByte(int x, int n, int c) {
-  return 2;
+  return (c << (n << 3)) + (x & ~(0xff << (n << 3)));
 }
 /* 
  * isNonZero - Check whether x is nonzero using
@@ -252,5 +256,5 @@ int replaceByte(int x, int n, int c) {
  *   Rating: 4 
  */
 int isNonZero(int x) {
-  return 2;
+  return !(!x);
 }
