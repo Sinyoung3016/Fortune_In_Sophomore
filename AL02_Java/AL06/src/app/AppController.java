@@ -55,9 +55,9 @@ public class AppController {
             AppView.output(">> Vertex 수를 입력하시오 : ");
             try{
                 int numberOfVertices = AppView.inputInt();
-                if(numberOfVertices < 1)
-                    AppView.output("[오류] Vertex 수는 0보다 커야 합니다.");
-                return numberOfVertices;
+                if(numberOfVertices < 2)
+                    AppView.outputLine("[오류] Vertex 수는 1보다 커야 합니다.");
+                else return numberOfVertices;
             }
             catch(NumberFormatException e){
                 AppView.outputLine("[오류] 올바른 숫자가 입력되지 않았습니다.");
@@ -71,8 +71,8 @@ public class AppController {
             try{
                 int numberOfEdges = AppView.inputInt();
                 if(numberOfEdges < 1)
-                    AppView.output("[오류] Edge 수는 0보다 커야 합니다.");
-                return numberOfEdges;
+                    AppView.outputLine("[오류] Edge 수는 0보다 커야 합니다.");
+                else return numberOfEdges;
             }
             catch(NumberFormatException e){
                 AppView.outputLine("[오류] 올바른 숫자가 입력되지 않았습니다.");

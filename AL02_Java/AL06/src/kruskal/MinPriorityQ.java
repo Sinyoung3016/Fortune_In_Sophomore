@@ -8,13 +8,6 @@ public class MinPriorityQ <E extends Comparable<E>>{
     private int _capacity;
     private E[] _heap;
 
-    public int size() { return _size; }
-    public void setSize(int _size) { this._size = _size; }
-    public int capacity() { return _capacity; }
-    private void setCapacity(int _capacity) { this._capacity = _capacity; }
-    private E[] heap() { return _heap; }
-    private void setHeap(E[] _heap) { this._heap = _heap; }
-
     public MinPriorityQ(){
         this(MinPriorityQ.DEFAULT_CAPACITY);
     }
@@ -25,11 +18,17 @@ public class MinPriorityQ <E extends Comparable<E>>{
         this.setSize(0);
     }
 
+    public int size() { return _size; }
+    public void setSize(int _size) { this._size = _size; }
+    public int capacity() { return _capacity; }
+    private void setCapacity(int _capacity) { this._capacity = _capacity; }
+    private E[] heap() { return _heap; }
+    private void setHeap(E[] _heap) { this._heap = _heap; }
+
     public boolean isEmpty(){ return (this.size() == 0); }
     public boolean isFull() {return (this.size() == this.capacity()); }
     public boolean add(E anElement){
         if(this.isFull()) return false;
-
         int positionForAdd = this.size() + 1;
         this.setSize(positionForAdd);
         while((positionForAdd > 1) && (anElement.compareTo(this.heap()[positionForAdd/2]) < 0)){
@@ -39,14 +38,12 @@ public class MinPriorityQ <E extends Comparable<E>>{
         this.heap()[positionForAdd] = anElement;
         return true;
     }
-
     public E min(){
         if(this.isEmpty()) return null;
         return this.heap()[MinPriorityQ.HEAP_ROOT];
     }
     public E removeMin(){
         if(this.isEmpty()) return null;
-
         E rootElement = this.heap()[MinPriorityQ.HEAP_ROOT];
         this.setSize(this.size()-1);
         if(this.size() > 0){
@@ -54,8 +51,7 @@ public class MinPriorityQ <E extends Comparable<E>>{
             int parent = MinPriorityQ.HEAP_ROOT;
             while((parent*2) <= this.size()){
                 int smallerChild = parent*2;
-                if((smallerChild < this.size()) && (this.heap()[smallerChild].compareTo(this.heap()[smallerChild+1]) > 0) )
-                    smallerChild++;
+                if((smallerChild < this.size()) && (this.heap()[smallerChild].compareTo(this.heap()[smallerChild+1]) > 0) ) smallerChild++;
                 if(lastElement.compareTo(this.heap()[smallerChild]) <= 0) break;
                 this.heap()[parent] = this.heap()[smallerChild];
                 parent = smallerChild;

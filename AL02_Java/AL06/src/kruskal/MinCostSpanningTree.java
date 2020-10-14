@@ -10,18 +10,18 @@ public class MinCostSpanningTree {
     private MinPriorityQ<WeightedEdge> _minPriorityQ;
     private List<WeightedEdge> _spanningTreeEdgeList;
 
+    public MinCostSpanningTree(){
+        this.setGraph(null);
+        this.setMinPriorityQ(null);
+        this.setSpanningTreeEdgeList(null);
+    }
+
     private WeightedUndirectedAdjacencyMatrixGraph<WeightedEdge> graph() { return _graph; }
     private void setGraph(WeightedUndirectedAdjacencyMatrixGraph<WeightedEdge> _graph) { this._graph = _graph; }
     private MinPriorityQ<WeightedEdge> minPriorityQ() { return _minPriorityQ; }
     private void setMinPriorityQ(MinPriorityQ<WeightedEdge> _minPriorityQ) { this._minPriorityQ = _minPriorityQ; }
     private List<WeightedEdge> spanningTreeEdgeList() { return _spanningTreeEdgeList; }
     private void setSpanningTreeEdgeList(List<WeightedEdge> _spanningTreeEdgeList) { this._spanningTreeEdgeList = _spanningTreeEdgeList; }
-
-    public MinCostSpanningTree(){
-        this.setGraph(null);
-        this.setMinPriorityQ(null);
-        this.setSpanningTreeEdgeList(null);
-    }
 
     private void initMinPriority(){
         this.setMinPriorityQ(new MinPriorityQ<WeightedEdge>(this.graph().numberOfEdges()));

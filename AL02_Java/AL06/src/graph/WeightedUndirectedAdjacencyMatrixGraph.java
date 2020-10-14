@@ -4,8 +4,6 @@ public class WeightedUndirectedAdjacencyMatrixGraph <WE extends WeightedEdge> ex
 
     private static final int WEIGHT_EDGE_NONE = -1;
 
-    //protected UndirectedAdjacencyMatrixGraph(){} 보고서와 달리 오류가 생겨서 주석처리함.
-
     public WeightedUndirectedAdjacencyMatrixGraph(int givenNumberOfVertices) {
         this.setNumberOfVertices(givenNumberOfVertices);
         this.setNumberOfEdges(0);
