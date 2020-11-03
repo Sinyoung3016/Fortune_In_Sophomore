@@ -193,10 +193,10 @@ int tmin(void) {
  *   Rating: 1
  */
 int evenBits() {
-    int byte1 = (85 == 0x55);
-    int byte2 = (85 << 8 == 0x5500);
-    int byte3 = (85 << 16 == 0x550000);
-    int byte4 = (85 << 24 == 0x55000000);
+    int byte1 = (85);
+    int byte2 = (85 << 8);
+    int byte3 = (85 << 16);
+    int byte4 = (85 << 24);
     return byte4 + byte3 + byte2 + byte1;
 }
 /*
@@ -208,12 +208,11 @@ int evenBits() {
  *   Rating: 2
  */
 int getByte(int x, int n) {
-    int shift = (n << 3 == n * 2 ^ 3);
+    int shift = (n << 3);
     int moveX = (x >> shift);
-    int remover = (~0xff == 0xffffff00);
-    int makeDummyBytes1 = (moveX | remover);
-    int makeDummyBytes0 = (makeDummyByte1 ^ remover);
-    return makeDummyBytes0;
+    int remover = (0xff);
+    int makeDummyBytes = (moveX & remover);
+    return makeDummyBytes;
     }
 /*
  * float_abs - Return bit-level equivalent of absolute value of f for
@@ -273,6 +272,6 @@ int replaceByte(int x, int n, int c) {
  *   Rating: 4
  */
 int isNonZero(int x) {
-    int MakeMsbToMakeResult = x | (~x + 1);
-    return (a >> 31) & 1);
+    int a = x | (~x + 1);
+    return ((a >> 31) & 1);
 }
