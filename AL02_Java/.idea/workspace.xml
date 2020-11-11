@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c1983b9f-a7d3-4ec9-90c6-4117e11b934a" name="Default Changelist" comment="" />
+    <list default="true" id="c1983b9f-a7d3-4ec9-90c6-4117e11b934a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../OOP_C++/Project10/.vs/Project10/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP_C++/Project10/.vs/Project10/v16/.suo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OOP_C++/Project10/.vs/Project10/v16/Browse.VC.db" beforeDir="false" afterPath="$PROJECT_DIR$/../OOP_C++/Project10/.vs/Project10/v16/Browse.VC.db" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,12 +32,22 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="578f1445-00bd-4176-ae4a-ed14cef24b48" name="Default Changelist" comment="" />
+      <changelist id="c1983b9f-a7d3-4ec9-90c6-4117e11b934a" name="Default Changelist" comment="" />
       <created>1602507861568</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602507861568</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="729" y="173" key="FileChooserDialogImpl" timestamp="1605097425660">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="729" y="173" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1605097425660" />
+    <state x="360" y="42" key="new project wizard" timestamp="1605097456541">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="360" y="42" key="new project wizard/0.0.1536.864@0.0.1536.864" timestamp="1605097456541" />
   </component>
 </project>
