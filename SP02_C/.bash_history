@@ -1390,3 +1390,47 @@ cd bomb32
 ls
 #1604219989
 gdb bomb
+#1604626041
+ls
+#1604626078
+pstree
+#1604626107
+/bin/
+#1604626118
+ls
+#1604626120
+bin/
+#1604626124
+/bin
+#1604626129
+cd bin
+#1604626139
+ls /bin/
+#1604626149
+ls
+#1604626272
+ls
+#1604626301
+/.lecture/
+#1604626306
+cd lecture
+#1604626357
+cp /home/sys02/sys02/shlab-handout.tar.gz
+#1604626366
+cp /home/sys02/sys02/shlab-handout.tar.gz .
+#1604626367
+ls
+#1604626402
+tar xvzf shlab-handout.tar.gz
+#1604626407
+ls
+#1604626414
+cd shlab-handout
+#1604626415
+ls
+#1604626555
+vi tsh.c
+#1604626609
+vi tsh.c
+#1604626729
+clear
