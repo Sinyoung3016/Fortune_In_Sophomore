@@ -171,12 +171,57 @@ int main(int argc, char **argv)
  */
 void eval(char *cmdline) 
 {
+	char* argv[MAXARGS];
+	pid_t pid;
+	int bg;
+	sigset_t mask, prev;
+
+	bg = parseline(cmdline, argv);
+	
+	sigemptyset(&mask);
+	sigaddset(&mask, SIGCHLD);
+	sigaddset(&mask, SIGINT);
+	sigaddset(&mask, SIGTSTP);
+
+	sigprocmask(SIG_BLOCK, &mask, &prev);
+
+	if(!builtin_cmd(argv)){
+		if((pid=fork()) < 0) unix_error("fork error");
+		if(pid == 0){
+			sigprocmask(SIG_SETMASK, &prev, NULL);
+			if(execve(argv[0], argv, environ) < 0){
+				printf("%s : Command not found\n\n", argv);
+				exit(0);
+			}
+		}
+
+		addjob(jobs, pid, (bg == 1 ? BG : FG), cmdline);
+		sigprocmask(SIG_SETMASK, &prev, NULL);
+
+		if(!bg){
+			while(1){
+				if(pid != fgpid(jobs)) break;
+				else sleep(1);
+			}	
+		}
+		else{		
+			printf("(%d) (%d) %s", pid2jid(pid), pid, cmdline);
+		}
+	}
 	return;
 }
 
 int builtin_cmd(char **argv)
 {
-	return 0;
+	char *cmd = argv[0];
+	
+	if(!strcmp(cmd, "quit")){
+		exit(0);
+	}else if(!strcmp(cmd, "jobs")){
+		listjobs(jobs, STDOUT_FILENO);
+		return 1;
+	}
+	return 0; 
 }
 
 void waitfg(pid_t pid, int output_fd)
@@ -197,7 +242,26 @@ void waitfg(pid_t pid, int output_fd)
  */
 void sigchld_handler(int sig) 
 {
-	return;
+	int child_status = 0;
+	pid_t pid;
+	while(( pid = waitpid(-1, &child_status, WNOHANG|WUNTRACED)) > 0){
+		if(WIFSIGNALED(child_status)){
+			printf("Job [%d] (%d) terminated by signal %d\n",
+					pid2jid(pid), pid, WTERMSIG(child_status));
+			deletejob(jobs, pid);
+		}
+		else if(WIFSTOPPED(child_status)){
+			printf("Job [%d] (%d) stopped by signal %d\n",
+					pid2jid(pid), pid, WSTOPSIG(child_status));
+			getjobpid(jobs, pid)->state = ST;
+		}
+		else if(WIFEXITED(child_status)){
+			deletejob(jobs, pid);
+		}
+		else{
+			deletejob(jobs, pid);
+		}
+	}
 }
 
 /* 
@@ -207,6 +271,8 @@ void sigchld_handler(int sig)
  */
 void sigint_handler(int sig) 
 {
+	pid_t pid = fgpid(jobs);
+	if(pid != 0) kill(pid, SIGINT);
 	return;
 }
 
@@ -217,6 +283,8 @@ void sigint_handler(int sig)
  */
 void sigtstp_handler(int sig) 
 {
+	pid_t pid = fgpid(jobs);
+	if(pid != 0) kill(pid, sig);
 	return;
 }
 
