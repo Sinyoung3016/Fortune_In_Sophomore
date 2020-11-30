@@ -1,0 +1,12 @@
+package sort;
+
+public class QuickSortByPivotMid<E extends Comparable<E>> extends QuickSort<E> {
+    @Override
+    protected int pivot(E[] aList, int left, int right) {
+        return ((left + right) / 2);
+    }
+
+    public QuickSortByPivotMid(boolean givenSortinOrder){
+        super(givenSortinOrder);
+    }
+}
