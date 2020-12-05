@@ -1,13 +1,13 @@
 package app;
 
 import experiment.*;
-import app.*;
+import experiment.ExperimentManagerForQuickSortWithInsertionSort;
 
 public class AppController {
 
     private ExperimentManagerForThreeSorts _managerForThreeSorts;
     private ExperimentManagerForQuickSorts _managerForQuickSorts;
-    private ExperimentManagerForQuickSortWithInsertionSort _managerForQuickSortWithInsertionSort;
+    private experiment.ExperimentManagerForQuickSortWithInsertionSort _managerForQuickSortWithInsertionSort;
 
     public ExperimentManagerForQuickSortWithInsertionSort managerForQuickSortWithInsertionSort() {
         return this._managerForQuickSortWithInsertionSort;

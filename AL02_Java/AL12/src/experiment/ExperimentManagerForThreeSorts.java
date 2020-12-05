@@ -101,7 +101,7 @@ public class ExperimentManagerForThreeSorts extends ExperimentManager {
             this.estimateForDescendingList();
     }
 
-    public long measurementForInsertionSorAt(int anIndex){
+    public long measurementForInsertionSortAt(int anIndex){
         return this.measurementForInsertionSort()[anIndex];
     }
     public long measurementForQuickSortAt(int anIndex){
@@ -110,13 +110,13 @@ public class ExperimentManagerForThreeSorts extends ExperimentManager {
     public long measurementForHeapSortAt(int anIndex){
         return this.measurementForHeapSort()[anIndex];
     }
-    public long estimatedForInsertionSortAt(int anIndex){
+    public long estimationForInsertionSortAt(int anIndex){
         return this.estimationForInsertionSort()[anIndex];
     }
-    public long estimatedForQuickSortAt(int anIndex){
+    public long estimationForQuickSortAt(int anIndex){
         return this.estimationForQuickSort()[anIndex];
     }
-    public long estimatedForHeapSortAt(int anIndex){
+    public long estimationForHeapSortAt(int anIndex){
         return this.estimationForHeapSort()[anIndex];
     }
 }

@@ -52,7 +52,7 @@ public abstract class ExperimentManager {
         showDebugMessage("super - ExperimentManager");
     }
 
-    public void preapareExperiment(ParameterSetForMeasurement aParameterSet){
+    public void prepareExperiment(ParameterSetForMeasurement aParameterSet){
         if (aParameterSet != null){
             this.setParameterSetForMeasurement(aParameterSet);
         }

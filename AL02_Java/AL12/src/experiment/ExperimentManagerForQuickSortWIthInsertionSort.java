@@ -4,7 +4,7 @@ import app.AppView;
 import sort.QuickSortByPivotRandom;
 import sort.QuickSortWIthInsertionSort;
 
-public class ExperimentManagerForQuickSortWIthInsertionSort extends ExperimentManager {
+public class ExperimentManagerForQuickSortWithInsertionSort extends ExperimentManager {
     private static final boolean DEBUG_MODE = false;
     private static void showDebugMessage(String aMessage){
         if(DEBUG_MODE)
@@ -56,20 +56,20 @@ public class ExperimentManagerForQuickSortWIthInsertionSort extends ExperimentMa
         Integer[] list = this.dataSet().listWithOrder(anOrder);
 
         this.setMeasurementForQuickSortWithInsertionSort(new long[this.parameterSetForMaxSizeOfInsertionSort().numberOfIteration()][]);
-        this.setMeasurementForQuickSortByPivotRandom(this.experiment().durationOfSort(ExperimentManagerForQuickSortWIthInsertionSort.QuickSortByPivotRandom, list));
+        this.setMeasurementForQuickSortByPivotRandom(this.experiment().durationOfSort(ExperimentManagerForQuickSortWithInsertionSort.QuickSortByPivotRandom, list));
 
-        ExperimentManagerForQuickSortWIthInsertionSort.showDebugMessage("[Debug] end of QuickSortByPivotRandom\n");
+        ExperimentManagerForQuickSortWithInsertionSort.showDebugMessage("[Debug] end of QuickSortByPivotRandom\n");
 
         for (int iteration = 0; iteration < this.parameterSetForMaxSizeOfInsertionSort().numberOfIteration(); iteration++){
             int size = this.parameterSetForMaxSizeOfInsertionSort().startingSize() +  this.parameterSetForMaxSizeOfInsertionSort().incrementSize() * iteration;
             QuickSortWithInsertionSort.setMaxSizeForInsertionSort(size);
-            this.setMeasurementForQuickSortWithInsertionSort(this.experiment().durationOfSort(ExperimentManagerForQuickSortWIthInsertionSort.QuickSortWithInsertionSort, list), iteration);
-            ExperimentManagerForQuickSortWIthInsertionSort.showDebugMessage("[Debug] end of QuickSortWithInsertionSort " +  size + "\n");
+            this.setMeasurementForQuickSortWithInsertionSort(this.experiment().durationOfSort(ExperimentManagerForQuickSortWithInsertionSort.QuickSortWithInsertionSort, list), iteration);
+            ExperimentManagerForQuickSortWithInsertionSort.showDebugMessage("[Debug] end of QuickSortWithInsertionSort " +  size + "\n");
         }
 
     }
 
-    public ExperimentManagerForQuickSortWIthInsertionSort(){
+    public ExperimentManagerForQuickSortWithInsertionSort(){
         this.setParameterSetForMeasurement(new ParameterSetForMeasurement(DEFAULT_STARTING_SIZE, DEFAULT_NUMBER_OF_ITERATION, DEFAULT_INCREMENT_SIZE, DEFAULT_NUMBER_OF_REPETITION_OF_SINGLE_SORT));
         this.setParameterSetForMaxSizeOfInsertionSort(new ParameterSetForIteration(DEFAULT_INSERTION_SORT_STARTING_SIZE, DEFAULT_INSERTION_SORT_INCREMENT_SIZE, DEFAULT_INSERTION_SORT_INCREMENT_SIZE));
     }
