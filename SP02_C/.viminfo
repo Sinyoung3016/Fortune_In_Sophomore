@@ -10,19 +10,32 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~MSle0~/FTRP
+
 # Command Line History (newest to oldest):
-:q
-|2,0,1605010669,,"q"
 :wq
-|2,0,1605010089,,"wq"
+|2,0,1607084065,,"wq"
+:q
+|2,0,1607084026,,"q"
+:w
+|2,0,1607082412,,"w"
+:WQ
+|2,0,1607077429,,"WQ"
+:q!
+|2,0,1607070505,,"q!"
 :ㅈㅂ
-|2,0,1604626587,,"ㅈㅂ"
+|2,0,1607037440,,"ㅈㅂ"
+:Wq
+|2,0,1606548280,,"Wq"
+:w!
+|2,0,1606460876,,"w!"
+:21
+|2,0,1606394670,,"21"
 :p
 |2,0,1602812005,,"p"
 :y
 |2,0,1602811994,,"y"
-:q!
-|2,0,1602350475,,"q!"
 :Q
 |2,0,1602350472,,"Q"
 :!q
@@ -31,6 +44,26 @@
 |2,0,1601959674,,"qw"
 
 # Search String History (newest to oldest):
+?/FTRP
+|2,1,1607078480,47,"FTRP"
+?/extendsize
+|2,1,1607076810,47,"extendsize"
+?/size_t
+|2,1,1607067187,47,"size_t"
+?//getjob
+|2,1,1606548764,47,"/getjob"
+?//kill
+|2,1,1606544582,47,"/kill"
+?//fgpid
+|2,1,1606544027,47,"/fgpid"
+?//
+|2,1,1606542258,47,"/"
+?/eval
+|2,1,1606540286,47,"eval"
+?//eval
+|2,1,1606540279,47,"/eval"
+?/waitpid
+|2,1,1606539730,47,"waitpid"
 
 # Expression History (newest to oldest):
 
@@ -39,248 +72,491 @@
 # Debug Line History (newest to oldest):
 
 # Registers:
-""0	LINE	0
+"0	LINE	0
 		printf("boz->baz.b = %c \n", boz->baz.b);
-|3,1,0,1,1,0,1602811994,"	printf(\"boz->baz.b = %c \\n\", boz->baz.b);"
+|3,0,0,1,1,0,1602811994,"	printf(\"boz->baz.b = %c \\n\", boz->baz.b);"
+""-	CHAR	0
+	#
+|3,1,36,0,1,0,1607083872,"#"
 
 # File marks:
-'0  219  0  ~/shlab-handout/tsh.c
-|4,48,219,0,1605010669,"~/shlab-handout/tsh.c"
-'1  164  2  ~/shlab-handout/tsh.c
-|4,49,164,2,1604626707,"~/shlab-handout/tsh.c"
-'2  164  2  ~/shlab-handout/tsh.c
-|4,50,164,2,1604626707,"~/shlab-handout/tsh.c"
-'3  7  2  ~/shlab-handout/tsh.c
-|4,51,7,2,1604626607,"~/shlab-handout/tsh.c"
-'4  7  2  ~/shlab-handout/tsh.c
-|4,52,7,2,1604626607,"~/shlab-handout/tsh.c"
-'5  7  2  ~/shlab-handout/tsh.c
-|4,53,7,2,1604626607,"~/shlab-handout/tsh.c"
-'6  7  2  ~/shlab-handout/tsh.c
-|4,54,7,2,1604626607,"~/shlab-handout/tsh.c"
-'7  42  0  ~/bomb32/bomb.c
-|4,55,42,0,1603793071,"~/bomb32/bomb.c"
-'8  77  0  ~/bomb32/bomb.c
-|4,56,77,0,1603420429,"~/bomb32/bomb.c"
-'9  77  0  ~/bomb32/bomb.c
-|4,57,77,0,1603420429,"~/bomb32/bomb.c"
+'0  64  42  ~/malloclab-handout/mm-implicit.c
+|4,48,64,42,1607088721,"~/malloclab-handout/mm-implicit.c"
+'1  43  42  ~/malloclab-handout/mm-implicit.c
+|4,49,43,42,1607084065,"~/malloclab-handout/mm-implicit.c"
+'2  43  42  ~/malloclab-handout/mm-implicit.c
+|4,50,43,42,1607084065,"~/malloclab-handout/mm-implicit.c"
+'3  57  0  ~/malloclab-handout/mm-naive.c
+|4,51,57,0,1607084026,"~/malloclab-handout/mm-naive.c"
+'4  75  28  ~/malloclab-handout/mm-implicit.c
+|4,52,75,28,1607084007,"~/malloclab-handout/mm-implicit.c"
+'5  74  28  ~/malloclab-handout/mm-implicit.c
+|4,53,74,28,1607084007,"~/malloclab-handout/mm-implicit.c"
+'6  75  28  ~/malloclab-handout/mm-implicit.c
+|4,54,75,28,1607084007,"~/malloclab-handout/mm-implicit.c"
+'7  74  28  ~/malloclab-handout/mm-implicit.c
+|4,55,74,28,1607084007,"~/malloclab-handout/mm-implicit.c"
+'8  42  58  ~/malloclab-handout/mm-implicit.c
+|4,56,42,58,1607083965,"~/malloclab-handout/mm-implicit.c"
+'9  42  58  ~/malloclab-handout/mm-implicit.c
+|4,57,42,58,1607083965,"~/malloclab-handout/mm-implicit.c"
 
 # Jumplist (newest first):
--'  219  0  ~/shlab-handout/tsh.c
-|4,39,219,0,1605010669,"~/shlab-handout/tsh.c"
--'  164  2  ~/shlab-handout/tsh.c
-|4,39,164,2,1605010594,"~/shlab-handout/tsh.c"
--'  164  2  ~/shlab-handout/tsh.c
-|4,39,164,2,1604626707,"~/shlab-handout/tsh.c"
--'  164  2  ~/shlab-handout/tsh.c
-|4,39,164,2,1604626707,"~/shlab-handout/tsh.c"
--'  7  2  ~/shlab-handout/tsh.c
-|4,39,7,2,1604626609,"~/shlab-handout/tsh.c"
--'  7  2  ~/shlab-handout/tsh.c
-|4,39,7,2,1604626609,"~/shlab-handout/tsh.c"
--'  7  2  ~/shlab-handout/tsh.c
-|4,39,7,2,1604626609,"~/shlab-handout/tsh.c"
--'  7  2  ~/shlab-handout/tsh.c
-|4,39,7,2,1604626607,"~/shlab-handout/tsh.c"
--'  7  2  ~/shlab-handout/tsh.c
-|4,39,7,2,1604626607,"~/shlab-handout/tsh.c"
--'  1  0  ~/shlab-handout/tsh.c
-|4,39,1,0,1604626555,"~/shlab-handout/tsh.c"
--'  1  0  ~/shlab-handout/tsh.c
-|4,39,1,0,1604626555,"~/shlab-handout/tsh.c"
--'  1  0  ~/shlab-handout/tsh.c
-|4,39,1,0,1604626555,"~/shlab-handout/tsh.c"
--'  1  0  ~/shlab-handout/tsh.c
-|4,39,1,0,1604626555,"~/shlab-handout/tsh.c"
--'  1  0  ~/shlab-handout/tsh.c
-|4,39,1,0,1604626555,"~/shlab-handout/tsh.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  42  0  ~/bomb32/bomb.c
-|4,39,42,0,1603793071,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603793029,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  77  0  ~/bomb32/bomb.c
-|4,39,77,0,1603420429,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  1  0  ~/bomb32/bomb.c
-|4,39,1,0,1603420079,"~/bomb32/bomb.c"
--'  7  6  ~/week05/ex02.s
-|4,39,7,6,1603419331,"~/week05/ex02.s"
--'  7  6  ~/week05/ex02.s
-|4,39,7,6,1603419331,"~/week05/ex02.s"
--'  7  6  ~/week05/ex02.s
-|4,39,7,6,1603419331,"~/week05/ex02.s"
--'  7  6  ~/week05/ex02.s
-|4,39,7,6,1603419331,"~/week05/ex02.s"
--'  7  6  ~/week05/ex02.s
-|4,39,7,6,1603419331,"~/week05/ex02.s"
--'  7  6  ~/week05/ex02.s
-|4,39,7,6,1603419331,"~/week05/ex02.s"
+-'  64  42  ~/malloclab-handout/mm-implicit.c
+|4,39,64,42,1607088721,"~/malloclab-handout/mm-implicit.c"
+-'  43  42  ~/malloclab-handout/mm-implicit.c
+|4,39,43,42,1607084235,"~/malloclab-handout/mm-implicit.c"
+-'  43  42  ~/malloclab-handout/mm-implicit.c
+|4,39,43,42,1607084065,"~/malloclab-handout/mm-implicit.c"
+-'  75  28  ~/malloclab-handout/mm-implicit.c
+|4,39,75,28,1607084029,"~/malloclab-handout/mm-implicit.c"
+-'  75  28  ~/malloclab-handout/mm-implicit.c
+|4,39,75,28,1607084029,"~/malloclab-handout/mm-implicit.c"
+-'  57  0  ~/malloclab-handout/mm-naive.c
+|4,39,57,0,1607084026,"~/malloclab-handout/mm-naive.c"
+-'  57  0  ~/malloclab-handout/mm-naive.c
+|4,39,57,0,1607084026,"~/malloclab-handout/mm-naive.c"
+-'  57  0  ~/malloclab-handout/mm-naive.c
+|4,39,57,0,1607084026,"~/malloclab-handout/mm-naive.c"
+-'  57  0  ~/malloclab-handout/mm-naive.c
+|4,39,57,0,1607084026,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607084011,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607084011,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607084011,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607084011,"~/malloclab-handout/mm-naive.c"
+-'  74  28  ~/malloclab-handout/mm-implicit.c
+|4,39,74,28,1607084007,"~/malloclab-handout/mm-implicit.c"
+-'  74  28  ~/malloclab-handout/mm-implicit.c
+|4,39,74,28,1607084007,"~/malloclab-handout/mm-implicit.c"
+-'  74  28  ~/malloclab-handout/mm-implicit.c
+|4,39,74,28,1607084007,"~/malloclab-handout/mm-implicit.c"
+-'  42  58  ~/malloclab-handout/mm-implicit.c
+|4,39,42,58,1607083993,"~/malloclab-handout/mm-implicit.c"
+-'  42  58  ~/malloclab-handout/mm-implicit.c
+|4,39,42,58,1607083993,"~/malloclab-handout/mm-implicit.c"
+-'  42  58  ~/malloclab-handout/mm-implicit.c
+|4,39,42,58,1607083993,"~/malloclab-handout/mm-implicit.c"
+-'  42  58  ~/malloclab-handout/mm-implicit.c
+|4,39,42,58,1607083993,"~/malloclab-handout/mm-implicit.c"
+-'  42  58  ~/malloclab-handout/mm-implicit.c
+|4,39,42,58,1607083965,"~/malloclab-handout/mm-implicit.c"
+-'  42  58  ~/malloclab-handout/mm-implicit.c
+|4,39,42,58,1607083965,"~/malloclab-handout/mm-implicit.c"
+-'  47  16  ~/malloclab-handout/mm-implicit.c
+|4,39,47,16,1607083879,"~/malloclab-handout/mm-implicit.c"
+-'  46  16  ~/malloclab-handout/mm-implicit.c
+|4,39,46,16,1607083879,"~/malloclab-handout/mm-implicit.c"
+-'  47  16  ~/malloclab-handout/mm-implicit.c
+|4,39,47,16,1607083879,"~/malloclab-handout/mm-implicit.c"
+-'  46  16  ~/malloclab-handout/mm-implicit.c
+|4,39,46,16,1607083879,"~/malloclab-handout/mm-implicit.c"
+-'  46  16  ~/malloclab-handout/mm-implicit.c
+|4,39,46,16,1607083879,"~/malloclab-handout/mm-implicit.c"
+-'  46  16  ~/malloclab-handout/mm-implicit.c
+|4,39,46,16,1607083879,"~/malloclab-handout/mm-implicit.c"
+-'  46  16  ~/malloclab-handout/mm-implicit.c
+|4,39,46,16,1607083879,"~/malloclab-handout/mm-implicit.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  48  0  ~/malloclab-handout/mm-naive.c
+|4,39,48,0,1607083877,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083848,"~/malloclab-handout/mm-naive.c"
+-'  45  16  ~/malloclab-handout/mm-implicit.c
+|4,39,45,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  46  16  ~/malloclab-handout/mm-implicit.c
+|4,39,46,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  45  16  ~/malloclab-handout/mm-implicit.c
+|4,39,45,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  45  16  ~/malloclab-handout/mm-implicit.c
+|4,39,45,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  45  16  ~/malloclab-handout/mm-implicit.c
+|4,39,45,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  45  16  ~/malloclab-handout/mm-implicit.c
+|4,39,45,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  45  16  ~/malloclab-handout/mm-implicit.c
+|4,39,45,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  45  16  ~/malloclab-handout/mm-implicit.c
+|4,39,45,16,1607083846,"~/malloclab-handout/mm-implicit.c"
+-'  229  13  ~/malloclab-handout/mm-implicit.c
+|4,39,229,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  228  13  ~/malloclab-handout/mm-implicit.c
+|4,39,228,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  227  13  ~/malloclab-handout/mm-implicit.c
+|4,39,227,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  229  13  ~/malloclab-handout/mm-implicit.c
+|4,39,229,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  228  13  ~/malloclab-handout/mm-implicit.c
+|4,39,228,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  228  13  ~/malloclab-handout/mm-implicit.c
+|4,39,228,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  227  13  ~/malloclab-handout/mm-implicit.c
+|4,39,227,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  228  13  ~/malloclab-handout/mm-implicit.c
+|4,39,228,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  227  13  ~/malloclab-handout/mm-implicit.c
+|4,39,227,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  227  13  ~/malloclab-handout/mm-implicit.c
+|4,39,227,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  228  13  ~/malloclab-handout/mm-implicit.c
+|4,39,228,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  227  13  ~/malloclab-handout/mm-implicit.c
+|4,39,227,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  228  13  ~/malloclab-handout/mm-implicit.c
+|4,39,228,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  227  13  ~/malloclab-handout/mm-implicit.c
+|4,39,227,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  227  13  ~/malloclab-handout/mm-implicit.c
+|4,39,227,13,1607083791,"~/malloclab-handout/mm-implicit.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
+-'  120  0  ~/malloclab-handout/mm-naive.c
+|4,39,120,0,1607083778,"~/malloclab-handout/mm-naive.c"
 
 # History of marks within files (newest to oldest):
 
+> ~/malloclab-handout/mm-implicit.c
+	*	1607088719	0
+	"	64	42
+	^	43	43
+	.	43	42
+	+	128	36
+	+	129	62
+	+	130	18
+	+	132	63
+	+	134	0
+	+	133	17
+	+	135	10
+	+	94	36
+	+	101	1
+	+	96	64
+	+	101	0
+	+	97	22
+	+	98	12
+	+	100	13
+	+	120	24
+	+	127	1
+	+	121	0
+	+	120	33
+	+	122	42
+	+	122	64
+	+	123	55
+	+	126	12
+	+	50	27
+	+	55	46
+	+	56	20
+	+	58	34
+	+	55	39
+	+	148	43
+	+	144	12
+	+	53	31
+	+	144	12
+	+	148	47
+	+	89	21
+	+	193	9
+	+	132	18
+	+	153	23
+	+	183	0
+	+	185	0
+	+	163	6
+	+	113	29
+	+	117	0
+	+	50	11
+	+	85	20
+	+	86	25
+	+	84	34
+	+	85	36
+	+	87	17
+	+	144	13
+	+	75	25
+	+	75	27
+	+	66	18
+	+	67	25
+	+	68	25
+	+	69	41
+	+	70	38
+	+	71	35
+	+	72	41
+	+	73	19
+	+	123	22
+	+	158	17
+	+	68	0
+	+	158	0
+	+	61	28
+	+	59	17
+	+	61	49
+	+	50	39
+	+	51	27
+	+	59	38
+	+	61	51
+	+	62	53
+	+	64	53
+	+	62	22
+	+	64	22
+	+	62	33
+	+	64	66
+	+	62	66
+	+	59	32
+	+	61	44
+	+	48	26
+	+	50	0
+	+	51	0
+	+	53	0
+	+	56	0
+	+	59	0
+	+	62	0
+	+	87	23
+	+	85	26
+	+	86	18
+	+	89	4
+	+	107	33
+	+	110	11
+	+	47	17
+	+	84	37
+	+	85	23
+	+	86	18
+	+	87	20
+	+	229	0
+	+	229	13
+	+	42	58
+	+	43	42
+
+> ~/malloclab-handout/mm-naive.c
+	*	1607084025	0
+	"	57	0
+	^	48	1
+	.	48	0
+	+	46	43
+	+	47	0
+	+	46	0
+	+	44	53
+	+	47	0
+	+	14	0
+	+	48	0
+
 > ~/shlab-handout/tsh.c
-	*	1605010660	0
-	"	219	0
-	^	6	22
-	.	6	19
-	+	7	2
-	+	6	15
-	+	6	11
-	+	6	7
-	+	6	3
-	+	5	2
-	+	6	19
+	*	1606549571	0
+	"	267	2
+	^	259	13
+	.	259	12
+	+	181	20
+	+	182	28
+	+	183	26
+	+	182	23
+	+	187	0
+	+	184	9
+	+	183	9
+	+	184	27
+	+	186	35
+	+	188	0
+	+	191	39
+	+	200	0
+	+	199	14
+	+	181	2
+	+	182	2
+	+	183	2
+	+	184	2
+	+	186	2
+	+	191	2
+	+	199	2
+	+	185	0
+	+	181	1
+	+	182	1
+	+	183	1
+	+	184	1
+	+	186	1
+	+	191	0
+	+	199	1
+	+	203	0
+	+	202	8
+	+	202	10
+	+	207	8
+	+	202	2
+	+	203	3
+	+	205	4
+	+	203	33
+	+	204	15
+	+	204	17
+	+	205	4
+	+	91	2
+	+	186	14
+	+	190	0
+	+	178	0
+	+	177	20
+	+	191	9
+	+	245	19
+	+	245	22
+	+	247	55
+	+	248	2
+	+	268	0
+	+	248	30
+	+	252	0
+	+	249	53
+	+	251	24
+	+	249	101
+	+	251	24
+	+	252	3
+	+	266	0
+	+	265	23
+	+	246	3
+	+	249	63
+	+	248	7
+	+	251	0
+	+	250	0
+	+	247	69
+	+	247	16
+	+	278	29
+	+	276	25
+	+	224	9
+	+	223	0
+	+	222	8
+	+	222	10
+	+	224	8
+	+	277	0
+	+	277	11
+	+	277	91
+	+	277	25
+	+	277	123
+	+	277	136
+	+	277	134
+	+	264	0
+	+	254	2
+	+	253	32
+	+	277	22
+	+	277	25
+	+	278	0
+	+	256	3
+	+	264	0
+	+	256	32
+	+	224	7
+	+	224	8
+	+	289	25
+	+	290	29
+	+	291	0
+	+	261	35
+	+	263	0
+	+	262	23
+	+	258	35
+	+	260	0
+	+	259	12
+
+> ~/shlab-handout/tsh
+	*	1606549427	0
+	"	1	0
+
+> ~/shlab-handout/trace09.txt
+	*	1606548458	0
+	"	1	0
+
+> ~/shlab-handout/trace08.txt
+	*	1606548452	0
+	"	1	0
+
+> ~/shlab-handout/trace05.txt
+	*	1606541299	0
+	"	1	0
+
+> ~/shlab-handout/trace04.txt
+	*	1606541244	0
+	"	1	0
+
+> ~/shlab-handout/trace3.txt
+	*	1606538814	0
+	"	1	0
+
+> ~/shlab-handout/trace03.txt
+	*	1606538809	0
+	"	1	0
 
 > ~/bomb32/bomb.c
 	*	1603793071	0

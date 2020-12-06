@@ -1434,3 +1434,929 @@ vi tsh.c
 vi tsh.c
 #1604626729
 clear
+#1605009912
+pstree
+#1605009968
+clear
+#1605010003
+ls /bin/
+#1605010025
+ls
+#1605010037
+mkdir /bin/
+#1605010082
+vi
+#1605010283
+ls
+#1605010301
+cd shlab-handout
+#1605010314
+ls
+#1605010322
+cat trace00.txt
+#1605010335
+cat trace01.txt
+#1605010352
+cat trace02.txt
+#1605010488
+./tshref
+#1605010495
+clear
+#1605010562
+./sdriver
+#1605010594
+vi tsh.c
+#1605010737
+ls
+#1605010744
+make
+#1605010759
+ls
+#1605010765
+clean
+#1605010785
+./sdriver -t 0
+#1605010808
+./sdriver -t 0 -s ./tsh
+#1605011385
+clear
+#1605011440
+vi tsh.c
+#1605014766
+ls
+#1605014772
+cd shlab-handout
+#1605014775
+ls
+#1605014781
+vim tsh.c
+#1605014901
+ls
+#1605014906
+cd shlab-handout
+#1605014907
+ls
+#1605014912
+vi tsh.c
+#1605014956
+vi tsh.c
+#1605015335
+vi tsh.c
+#1605015400
+make
+#1605015419
+./sdriver -V -t 1 -s ./tsh
+#1605015498
+./tsh
+#1605015556
+cat trace02.txt
+#1605015914
+vi tsh.c
+#1605015940
+vi tsh.c
+#1605016067
+ls
+#1605016075
+cd shlab-handout
+#1605016076
+ls
+#1605016080
+vim tsh.c
+#1605016112
+vim tsh.c
+#1605016163
+vim tsh.c
+#1605016238
+make
+#1605016243
+vim tsh.c
+#1605016262
+make
+#1605016273
+vim tsh.c
+#1605016352
+./sdriver -V-s ./tsh -t 2
+#1605016361
+./sdriver -V -s ./tsh -t 2
+#1605016422
+cat trace02.txt
+#1605016428
+./myenv
+#1605016453
+./tsh
+#1605016579
+ps
+#1605017510
+ls
+#1605017516
+cd shlab-handout
+#1605017570
+ls
+#1605018025
+./sdriver -V -t 0 -s ./tsh
+#1605018051
+./sdriver -V -t 1 -s ./tsh
+#1605018078
+./sdriver -V -t 2 -s ./tsh
+#1605018231
+ls
+#1605018249
+cd shlab-handout
+#1605018252
+ls
+#1605018263
+vim tsh.c
+#1605020298
+vim tsh.c
+#1605231699
+ls
+#1605231707
+cd shlab-handout
+#1605231708
+ls
+#1605231714
+vi tsh.c
+#1605232004
+make
+#1605232017
+vi tsh.c
+#1605232033
+make
+#1605232050
+vi tsh.c
+#1605232068
+make
+#1605232106
+./sdriver -V -s ./tsh -t 3
+#1605232129
+cat trace03.txt
+#1605232148
+cat trace04.txt
+#1605763832
+ls
+#1606127944
+ls
+#1606127954
+cd shlab-handout
+#1606127956
+ls
+#1606128306
+vi tsh.c
+#1606128942
+./sdriver -V -s ./tsh -t 3
+#1606128955
+cat trace03.txt
+#1606128971
+./sdriver -V -s ./tsh -t 4
+#1606128976
+cat trace04.txt
+#1606129022
+/echo -e tsh\076 quit
+#1606129030
+./echo -e tsh\076 quit
+#1606129033
+echo
+#1606129052
+/bin/echo -e tsh\076 quit
+#1606129055
+/bin/echo -e tsh\076 quit
+#1606129111
+vi tsh.c
+#1606129296
+vi tsh.c
+#1606129541
+cat trace07.txt
+#1606129597
+vi tsh.c
+#1606130212
+ls
+#1606130219
+cd datalab-handout
+#1606130219
+ls
+#1606130231
+cd ..
+#1606130237
+cd shlab-handout
+#1606130238
+ls
+#1606130244
+vi tsh.c
+#1606130277
+vi tsh.c
+#1606130392
+htop
+#1606382318
+ls
+#1606382329
+cd shlab-handout
+#1606382330
+ls
+#1606382337
+vi tsh.c
+#1606383095
+vi tsh.c
+#1606383566
+./sdriver -V -t 06 -s ./tshref
+#1606383579
+./sdriver -V -t 05 -s ./tshref
+#1606383585
+./sdriver -V -t 07 -s ./tshref
+#1606383601
+vi tsh.c
+#1606392647
+ls
+#1606392654
+cd shlab-handout
+#1606392656
+ls
+#1606392758
+vi tsh
+#1606392775
+vi tsh.c
+#1606393680
+vi tsh.c
+#1606393897
+./sdrive -V -t 02 -s ./tshref
+#1606393901
+./sdriver -V -t 02 -s ./tshref
+#1606393910
+./sdriver -V -t 03 -s ./tshref
+#1606393967
+./sdriver -V -t 03 -s ./tsh
+#1606394011
+./sdriver -V -t 04 -s ./tsh
+#1606394120
+./sdriver -V -t 05 -s ./tsh
+#1606394130
+ps
+#1606394154
+./sdriver -V -t 05 -s ./tshref
+#1606394188
+./sdriver -V -t 06 -s ./tshref
+#1606394191
+./sdriver -V -t 06 -s ./tsh
+#1606394238
+vi tsh.c
+#1606394273
+make
+#1606394282
+./sdriver -V -t 06 -s ./tsh
+#1606394289
+./sdriver -V -t 05 -s ./tsh
+#1606394337
+./sdriver -V -t 06 -s ./tsh
+#1606394370
+./sdriver -V -t 07 -s ./tsh
+#1606394385
+vi tsh.c
+#1606394439
+vi tsh.c
+#1606394629
+vi tsh.c
+#1606394679
+make
+#1606394692
+vi tsh.c
+#1606394772
+make
+#1606394783
+vi tsh.c
+#1606394850
+make
+#1606394890
+vi tsh.c
+#1606394909
+make
+#1606394915
+./sdriver -V -t 07 -s ./tsh
+#1606394927
+ps
+#1606394935
+ps
+#1606394956
+k 25296
+#1606394969
+vi tsh.c
+#1606395298
+vi tsh.c
+#1606395312
+make
+#1606395320
+vi tsh.c
+#1606395334
+make
+#1606395343
+vi tsh.c
+#1606395354
+make
+#1606395373
+vi tsh.c
+#1606395392
+make
+#1606395420
+vi tsh.c
+#1606395434
+make
+#1606395452
+vi tsh.c
+#1606395485
+vi tsh.c
+#1606395519
+make
+#1606395531
+vi tsh.c
+#1606395543
+make
+#1606395554
+./sdriver -V -t 07 -s ./tsh
+#1606395572
+vi tsh.c
+#1606395703
+make
+#1606395712
+vi tsh.c
+#1606395725
+vi tsh.c
+#1606395741
+make
+#1606395748
+./sdriver -V -t 08 -s ./tsh
+#1606395806
+vi tsh.c
+#1606396008
+ps
+#1606396032
+kill -9 25297
+#1606396033
+ps
+#1606396065
+ps
+#1606396099
+kill -9 25297
+#1606396149
+make
+#1606396167
+vi tsh.c
+#1606396185
+make
+#1606396195
+./sdriver -V -t 07 -s ./tsh
+#1606396226
+./sdriver -V -t 07 -s ./tshref
+#1606396266
+vi tsh.c
+#1606396392
+make
+#1606396398
+./sdriver -V -t 07 -s ./tsh
+#1606396411
+./sdriver -V -t 06 -s ./tsh
+#1606396437
+vi tsh.c
+#1606396491
+make
+#1606396493
+./sdriver -V -t 06 -s ./tsh
+#1606396500
+./sdriver -V -t 07 -s ./tsh
+#1606396598
+ps
+#1606396622
+kill -9 26491
+#1606396630
+kill -9 26613
+#1606396635
+kill -9 26641
+#1606396636
+ps
+#1606396648
+kill -9 25296
+#1606396649
+ps
+#1606396660
+vi tsh.c
+#1606441867
+ls
+#1606441908
+cp /home/sys02/sys02/malloclab-handout.tar ~
+#1606441909
+ls
+#1606441934
+tar xvf malloclab-handout.tar
+#1606441936
+ls
+#1606441974
+cd malloclab-handout
+#1606441976
+ls
+#1606441987
+make naive
+#1606442141
+ls -al
+#1606442149
+make
+#1606442283
+./mdriver
+#1606459347
+ls
+#1606459353
+cd shlab-handout
+#1606459353
+ls
+#1606459366
+vi tsh.c
+#1606459413
+./sdriver -V -t 8 -s ./tsh
+#1606470894
+ls
+#1606470898
+cd shlab-handout
+#1606470900
+ls
+#1606470905
+vi tsh.c
+#1606471049
+make
+#1606471064
+vi tsh.c
+#1606471154
+make
+#1606471177
+./sdriver -V -t 9 -s ./tsh
+#1606460544
+ls
+#1606460551
+cd shlab-handout
+#1606460552
+ls
+#1606460675
+./sdriver -V -t 9 -s ./tsh
+#1606460742
+vi tsh.c
+#1606460881
+vi tsh.c
+#1606461465
+./sdriver -V -t 9 -s ./tsh
+#1606461484
+vi tsh.c
+#1606536292
+ls
+#1606536298
+cd shlab-handout
+#1606536299
+ls
+#1606536304
+vi tsh.c
+#1606538807
+vi trace03.txt
+#1606538813
+vi trace3.txt
+#1606538824
+d trace3.txt
+#1606538834
+delete trace3.txt
+#1606538844
+rm trace3.txt
+#1606538846
+ls
+#1606539023
+vi tsh.c
+#1606539308
+ps
+#1606539393
+vi tsh.c
+#1606539744
+vi tsh.c
+#1606540903
+./tsh
+#1606540922
+vi trace05.txt
+#1606540930
+./tsh
+#1606540992
+./tsh
+#1606541027
+ps
+#1606541054
+./tsh
+#1606541225
+vi trace04.txt
+#1606541289
+vi trace05.txt
+#1606541948
+ps
+#1606542249
+vi tsh.c
+#1606542870
+./sdriver -V -t 9 -s tsh
+#1606544016
+vi tsh.c
+#1606544498
+./sdriver -V -t 8 -s tsh
+#1606544579
+vi tsh.c
+#1606547804
+ls
+#1606547809
+cd shlab-handout
+#1606547809
+ls
+#1606547814
+vi tsh.c
+#1606547850
+make
+#1606547865
+./sdriver -V -t 9 -s tsh
+#1606547905
+vi tsh.c
+#1606547943
+make
+#1606547946
+./sdriver -V -t 9 -s tsh
+#1606547956
+vi tsh.c
+#1606548026
+make
+#1606548028
+./sdriver -V -t 9 -s tsh
+#1606548131
+ps
+#1606548137
+kill -9 tsh
+#1606548143
+kill -9 31568
+#1606548145
+ls
+#1606548145
+ps
+#1606548156
+vi tsh.c
+#1606548293
+vi trace08.txt
+#1606548303
+vi trace09.txt
+#1606548401
+vi tsh.c
+#1606548430
+vi trace08.txt
+#1606548458
+vi trace09.txt
+#1606548522
+vi tsh.c
+#1606549167
+vi tsh.c
+#1606549414
+ls
+#1606549418
+cd shlab-handout
+#1606549422
+ls
+#1606549425
+vi tsh
+#1606549430
+vi tsh.c
+#1606549468
+make
+#1606549472
+vi tsh.c
+#1606549480
+make
+#1606549502
+./sdriver -V -t 10 -s tsh
+#1606549540
+vi tsh.c
+#1606549578
+./sdriver -V -t 11 -s tsh
+#1606549609
+./sdriver -V -t 12 -s tsh
+#1606837506
+ps
+#1607037330
+ls
+#1607037338
+cd malloclab-handout
+#1607037338
+ls
+#1607037368
+vi mm-implicit.c
+#1607037384
+vi mm-naive.c
+#1607037409
+vi mm-implicit.c
+#1607037821
+make naive.c
+#1607037834
+make naive
+#1607037837
+make
+#1607037848
+./ddriver
+#1607037862
+./mdriver
+#1607038132
+vi mm-naive.c
+#1607038749
+vi mm-implicit.c
+#1607039575
+ls
+#1607039585
+cd malloclab-handout
+#1607039586
+ls
+#1607039593
+vi mm-implicit.c
+#1607040032
+vi mm-implicit.c
+#1607047059
+ls
+#1607047069
+cd malloclab-handout
+#1607047071
+ls
+#1607047084
+vi mm-implicit.c
+#1607047210
+vi mm-implicit.c
+#1607047322
+vi mm-implicit.c
+#1607069775
+cd malloclab-handout
+#1607069776
+ls
+#1607069783
+vi mm-implicit.c
+#1607069825
+vi mm-implicit.c
+#1607070463
+cd malloclab-handout/
+#1607070475
+vi mm-implicit.c
+#1607070507
+vi mm-implicit.c
+#1607060208
+ls
+#1607060213
+cd malloclab-handout
+#1607060214
+ls
+#1607060265
+vi mm-naive.c
+#1607065755
+make mm-naive.c
+#1607065756
+make mm-naive
+#1607065758
+make
+#1607065766
+./mdriver
+#1607065803
+vi mm-naive.c
+#1607070748
+cd malloclab-handout/
+#1607070756
+vi mm-implicit.c
+#1607071251
+vi mm-implicit.c
+#1607071400
+vi mm-implicit.c
+#1607071539
+cd malloclab-handout/
+#1607071540
+ls
+#1607071547
+vi mm-implicit.c 
+#1607071803
+make implicit
+#1607071805
+make
+#1607071889
+vi mm-implicit.c 
+#1607071926
+make
+#1607071934
+vi mm-implicit.c 
+#1607071963
+vi mm-implicit.c 
+#1607071966
+make
+#1607071999
+vi mm-implicit.c 
+#1607072063
+make
+#1607072072
+vi mm-implicit.c 
+#1607072081
+make
+#1607072133
+vi mm-implicit.c 
+#1607072170
+vi mm-implicit.c 
+#1607072174
+make
+#1607072187
+vi mm-implicit.c 
+#1607072204
+make
+#1607072220
+vi mm-implicit.c 
+#1607072268
+make
+#1607075632
+cd malloclab-handout/
+#1607075633
+ls
+#1607075638
+vi mm-implicit.c 
+#1607075690
+make
+#1607075718
+vi mm-implicit.c 
+#1607075838
+make
+#1607075891
+vi mm-implicit.c 
+#1607076009
+make
+#1607076047
+vi mm-implicit.c 
+#1607076130
+make
+#1607076248
+vi mm-implicit.c 
+#1607076417
+make
+#1607076485
+vi mm-implicit.c 
+#1607076614
+make
+#1607076626
+vi mm-implicit.c 
+#1607076679
+make
+#1607076717
+make
+#1607076718
+make
+#1607076730
+vi mm-implicit.c
+#1607076766
+make
+#1607076799
+vi mm-implicit.c
+#1607076872
+make
+#1607076908
+ls
+#1607076909
+ls
+#1607076910
+ls
+#1607076911
+ls
+#1607076912
+ls
+#1607076915
+make
+#1607076946
+vi mm-implicit.c
+#1607076958
+make
+#1607076975
+vi mm-implicit.c
+#1607077090
+make
+#1607077337
+cd malloclab-handout/
+#1607077347
+vi mm-implicit.c 
+#1607077414
+cd malloclab-handout/
+#1607077415
+ls
+#1607077421
+vi mm-implicit.c 
+#1607077436
+make
+#1607077482
+vi mm-implicit.c 
+#1607077503
+make
+#1607077555
+vi mm-implicit.c 
+#1607077584
+make
+#1607077633
+make mm-implicit
+#1607077635
+make
+#1607077641
+ls
+#1607077641
+ls
+#1607077642
+ls
+#1607077643
+ls
+#1607077644
+make
+#1607077790
+vi mm-implicit.c 
+#1607077903
+make
+#1607077926
+vi mm-implicit.c 
+#1607077971
+make
+#1607077975
+./mdriver
+#1607077982
+ls
+#1607077993
+./mdriver
+#1607078006
+ls
+#1607078013
+make mm-implicit
+#1607078023
+make
+#1607078098
+vi mm-implicit.c 
+#1607078170
+vi mm-implicit.c 
+#1607078209
+make
+#1607078219
+vi mm-implicit.c 
+#1607078280
+make
+#1607078295
+make implicit
+#1607078296
+make
+#1607078305
+vi mm-implicit.c 
+#1607078356
+make
+#1607078409
+vi mm-implicit.c 
+#1607078712
+make
+#1607078729
+./mdriver
+#1607078757
+vi mm-implicit.c 
+#1607078908
+make
+#1607078912
+./mdriver
+#1607078918
+vi mm-implicit.c 
+#1607079068
+make
+#1607079069
+./mdriver
+#1607079075
+vi mm-implicit.c 
+#1607079519
+make
+#1607079521
+./mdriver
+#1607080914
+cd malloclab-handout/
+#1607080920
+vi mm-implicit.c 
+#1607083553
+vi mm-naive.c
+#1607083583
+vi mm-implicit.c 
+#1607083734
+make
+#1607083766
+vi mm-naive.c
+#1607083791
+vi mm-implicit.c 
+#1607083848
+vi mm-naive.c
+#1607083879
+vi mm-implicit.c 
+#1607083968
+make
+#1607083993
+vi mm-implicit.c 
+#1607084011
+vi mm-naive.c
+#1607084029
+vi mm-implicit.c 
+#1607084067
+make
+#1607084083
+make
+#1607084090
+./mdrive
+#1607084093
+./mdriver
+#1607084235
+vi mm-implicit.c 
+#1607167525
+ls
