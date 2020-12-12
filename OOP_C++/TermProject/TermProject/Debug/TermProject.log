@@ -1,7 +1,2 @@
 ﻿  project.cpp
-C:\Users\tasha\OneDrive\Documents\GIT_WORKSPACE\Fortune_In_Sophomore\OOP_C++\TermProject\TermProject\project.cpp(90,32): warning C4101: 'a' :참조되지 않은 지역 변수입니다.
-C:\Users\tasha\OneDrive\Documents\GIT_WORKSPACE\Fortune_In_Sophomore\OOP_C++\TermProject\TermProject\project.cpp(325,32): warning C4101: 'a' :참조되지 않은 지역 변수입니다.
-C:\Users\tasha\OneDrive\Documents\GIT_WORKSPACE\Fortune_In_Sophomore\OOP_C++\TermProject\TermProject\project.cpp(359,32): warning C4101: 'a' :참조되지 않은 지역 변수입니다.
-C:\Users\tasha\OneDrive\Documents\GIT_WORKSPACE\Fortune_In_Sophomore\OOP_C++\TermProject\TermProject\project.cpp(380,32): warning C4101: 'a' :참조되지 않은 지역 변수입니다.
-C:\Users\tasha\OneDrive\Documents\GIT_WORKSPACE\Fortune_In_Sophomore\OOP_C++\TermProject\TermProject\project.cpp(397,32): warning C4101: 'a' :참조되지 않은 지역 변수입니다.
   TermProject.vcxproj -> C:\Users\tasha\OneDrive\Documents\GIT_WORKSPACE\Fortune_In_Sophomore\OOP_C++\TermProject\Debug\TermProject.exe
